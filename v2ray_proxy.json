@@ -1,0 +1,40 @@
+{
+    "inbounds":
+    [
+        {
+            // "tag": "VMess-TCP-5678.json",
+            "port": 10214,
+            "listen": "0.0.0.0",
+            "protocol": "vmess",
+            "settings":
+            {
+                "clients":
+                [
+                    {
+                        "id": "89682891-3d57-4cef-abbb-fbac5937ba29"
+                    }
+                ]
+            },
+            "streamSettings":
+            {
+                "network": "tcp",
+                "tcpSettings":
+                {
+                    "header":
+                    {
+                        "type": "none"
+                    }
+                }
+            },
+            "sniffing":
+            {
+                "enabled": true,
+                "destOverride":
+                [
+                    "http",
+                    "tls"
+                ]
+            }
+        }
+    ]
+}
